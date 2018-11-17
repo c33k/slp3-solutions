@@ -9,3 +9,9 @@ module.exports.regexLowerCaseEndingInB = string => /^[a-z]*b$/.test(string);
   immediately followed by a b;
 */
 module.exports.testASurroundedByB = string => /^(b(ab)*)*$/.test(string);
+
+/*2.2-1: the set of all strings with two consecutive 
+    repeated words (e.g., “Humbert Humbert” and “the the” 
+    but not “the bug” or “the big bug”);
+*/
+module.exports.consecutiveRepeatedWords = string => /\b(\w+)\s(\1)\b/.test(string);

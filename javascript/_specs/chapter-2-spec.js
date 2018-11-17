@@ -37,5 +37,15 @@ test("2.1.2 - lowercase alphabetic strings ending in b", t => {
     t.end();
   });
 
+  test("2.2.1 - the set of all strings with two consecutive repeated words", t => {
+    t.ok(NLP2.consecutiveRepeatedWords('the the'));
+    t.ok(NLP2.consecutiveRepeatedWords('Humbert Humbert'));
+    t.ok(NLP2.consecutiveRepeatedWords('123 123'));
+    t.notOk(NLP2.consecutiveRepeatedWords('the something'));
+    t.ok(NLP2.consecutiveRepeatedWords('the the something'));
+    t.notOk(NLP2.consecutiveRepeatedWords(''))
+    t.end();
+  });
+
 
   
