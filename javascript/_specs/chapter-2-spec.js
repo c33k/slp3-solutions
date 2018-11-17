@@ -47,5 +47,17 @@ test("2.1.2 - lowercase alphabetic strings ending in b", t => {
     t.end();
   });
 
+  test("2.2.2 - begins with integer and ends with word", t => {
+    t.ok(NLP2.startsWithIntegerEndsWithWord('123123 something 1hi1h23i Word'));
+    t.notOk(NLP2.startsWithIntegerEndsWithWord('Word word'));
+    t.notOk(NLP2.startsWithIntegerEndsWithWord('word 123'));
+    t.notOk(NLP2.startsWithIntegerEndsWithWord('123'));
+    t.notOk(NLP2.startsWithIntegerEndsWithWord('word'));
+    t.notOk(NLP2.startsWithIntegerEndsWithWord(''));
+    t.end();
+  });
+
+  
+
 
   

@@ -15,3 +15,10 @@ module.exports.testASurroundedByB = string => /^(b(ab)*)*$/.test(string);
     but not “the bug” or “the big bug”);
 */
 module.exports.consecutiveRepeatedWords = string => /\b(\w+)\s(\1)\b/.test(string);
+
+/*2.2-2: all strings that start at the beginning of the line 
+  with an integer and that end at the end of the line with a word;
+  */
+
+ module.exports.startsWithIntegerEndsWithWord = 
+    string => /^\d+.*\b\w+$/.test(string);
