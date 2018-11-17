@@ -1,0 +1,34 @@
+{
+  "name": "slp3-solutions",
+  "version": "1.0.0",
+  "description": "Solutions of the exercises from the book Speech and Language Processing (3rd Edition)",
+  "main": "app.js",
+  "scripts": {
+    "test": "tape _specs/*-spec.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c33k/slp3-solutions.git"
+  },
+  "keywords": [
+    "NLP",
+    "Speech",
+    "and",
+    "Language",
+    "Processing",
+    "Stanford",
+    "book",
+    "computer",
+    "science"
+  ],
+  "author": "Rafael L. Toscano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c33k/slp3-solutions/issues"
+  },
+  "homepage": "https://github.com/c33k/slp3-solutions#readme",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.9.1"
+  }
+}
